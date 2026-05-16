@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+const metiers = [
+  { slug: 'logement-collectif', titre: 'Logement collectif', accroche: 'Notre cœur historique. Plus de 800 logements livrés chaque année.', icon: '🏘️' },
+  { slug: 'tertiaire-sante', titre: 'Tertiaire & santé', accroche: 'EHPAD, hôtellerie, bureaux, retail. Discipline du site occupé.', icon: '🏢' },
+  { slug: 'industrie-defense', titre: 'Industrie & défense', accroche: 'Sites industriels, logistique, Pôle Mer Méditerranée.', icon: '🏭' },
+  { slug: 'solutions-energetiques', titre: 'Solutions énergétiques', accroche: 'PV 1-200 kWc, IRVE, GTB, audits décret tertiaire.', icon: '⚡' },
+  { slug: 'ssi', titre: 'Sécurité incendie (SSI)', accroche: 'Conception, installation, maintenance SSI pour ERP et tertiaire.', icon: '🔥' },
+  { slug: 'maintenance', titre: 'Maintenance multi-techniques', accroche: 'Contrats préventifs et correctifs, astreinte 24/7.', icon: '🛠️' }
+];
+---
+<Base title="Nos métiers : logement, tertiaire, industrie, énergies | ECS"
+      description="Six expertises ECS : logement collectif, tertiaire & santé, industrie & défense, solutions énergétiques (PV, IRVE, GTB), sécurité incendie, maintenance.">
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Nos savoir-faire</p>
+      <h1 class="h1-section">Six expertises B2B. Une cohérence intégrée.</h1>
+      <p class="mt-6 text-lg text-gray-700 max-w-3xl leading-relaxed">
+        Du logement collectif à l'industrie, de la maintenance multi-techniques aux solutions énergétiques
+        intégrées, nos six métiers répondent aux exigences des donneurs d'ordres B2B. La force d'ECS, c'est
+        de porter ces métiers de manière cohérente — courants forts, courants faibles, photovoltaïque, IRVE,
+        GTB, SSI — pour offrir à nos clients un interlocuteur unique sur l'ensemble du périmètre génie
+        électrique de leurs projets.
+      </p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        {metiers.map(m => (
+          <a href={`/nos-metiers/${m.slug}`} class="group block bg-white rounded-lg shadow-sm border border-gray-100 hover:border-ecs-green hover:shadow-xl transition-all p-6">
+            <div class="text-4xl mb-4">{m.icon}</div>
+            <h2 class="text-xl font-bold mb-2 group-hover:text-ecs-green transition-colors">{m.titre}</h2>
+            <p class="text-sm text-gray-600 leading-relaxed">{m.accroche}</p>
+            <p class="mt-4 text-sm font-bold text-ecs-green">En savoir plus →</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

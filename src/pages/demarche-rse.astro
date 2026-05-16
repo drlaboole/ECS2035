@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+const piliers = [
+  { titre: 'Sécurité', icon: '🦺', desc: 'MASE en cours, certification visée T1 2027. Animation terrain quotidienne, rituels Safety Morning.' },
+  { titre: 'Qualité', icon: '📋', desc: 'ISO 9001 renouvelée en 2025. Système de management de la qualité documenté, contrôlé et amélioré en continu.' },
+  { titre: 'Environnement', icon: '♻️', desc: 'EcoVadis Engagé obtenu en janvier 2026 (niveau Argent visé 2027). Bilan carbone et gestion des déchets de chantier.' },
+  { titre: 'Capital humain', icon: '👥', desc: 'École interne Route des Génies, alternance, mobilité inter-agences. Plus de 100 collaborateurs formés sur 10 ans.' },
+  { titre: 'Insertion locale', icon: '🤝', desc: 'Partenariats CFA / AFPA / E2C, sous-traitance ESAT, mécénat de compétences.' },
+  { titre: 'Éthique & gouvernance', icon: '⚖️', desc: 'Livret Vert diffusé à tous les collaborateurs, charte engagements, livre vert règles commerciales.' }
+];
+---
+<Base title="Notre démarche RSE : MASE, EcoVadis, insertion | ECS"
+      description="Sécurité (MASE), qualité (ISO 9001), environnement (EcoVadis Engagé 01/2026), capital humain, insertion : la démarche RSE structurée d'ECS.">
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Notre démarche RSE</p>
+      <h1 class="h1-section">La performance n'a de sens que si elle est partagée.</h1>
+      <div class="prose-ecs mt-8 max-w-3xl">
+        <p class="text-lg leading-relaxed">
+          Chez Énergie Côte Sud, la responsabilité sociétale n'est pas une obligation contractuelle — c'est
+          une conviction qui structure nos décisions depuis dix ans. Sécurité au cœur, engagement environnemental,
+          capital humain, insertion : cette page rassemble nos engagements concrets, les indicateurs que nous
+          mesurons, et les partenariats que nous animons.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        {piliers.map(p => (
+          <div class="bg-white border border-gray-200 rounded-lg p-6 hover:border-ecs-green hover:shadow-md transition-all">
+            <div class="text-3xl mb-3">{p.icon}</div>
+            <h3 class="font-bold text-lg mb-2 text-ecs-green">{p.titre}</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-ecs-green-lighter py-16">
+    <div class="container-ecs">
+      <h2 class="h2-section">Nos certifications</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
+        <div class="bg-white p-6 rounded-lg text-center">
+          <div class="text-3xl mb-2">📋</div>
+          <div class="font-bold text-ecs-green">ISO 9001</div>
+          <div class="text-xs text-gray-600 mt-1">Renouvelée 2025 · Prochain audit 2028</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg text-center">
+          <div class="text-3xl mb-2">🦺</div>
+          <div class="font-bold text-ecs-green">MASE</div>
+          <div class="text-xs text-gray-600 mt-1">Audit blanc T4 2026 · Certification T1 2027</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg text-center">
+          <div class="text-3xl mb-2">♻️</div>
+          <div class="font-bold text-ecs-green">EcoVadis</div>
+          <div class="text-xs text-gray-600 mt-1">Engagé 01/2026 · Argent 2027</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg text-center">
+          <div class="text-3xl mb-2">⚡</div>
+          <div class="font-bold text-ecs-green">Qualifelec</div>
+          <div class="text-xs text-gray-600 mt-1">Plusieurs qualifications actives</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

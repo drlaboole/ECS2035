@@ -1,0 +1,74 @@
+---
+import Base from '../layouts/Base.astro';
+const refs = [
+  {
+    titre: 'Résidence Tamaris — Saint-Tropez',
+    segment: 'Logement / Saisonniers hôtellerie de luxe',
+    moa: 'LVMH · Airelles Collection',
+    moe: 'Egis · François Vieillecroze',
+    programme: '214 chambres · 12 mois chrono',
+    perim: 'CFO + CFA + photovoltaïque',
+    citation: '« Un chantier mené dans des délais hors normes pour la Côte d\'Azur, sans concession sur la qualité. »'
+  },
+  {
+    titre: 'EHPAD Jardin Arcadie',
+    segment: 'Santé / EHPAD',
+    moa: 'Jardin Arcadie',
+    moe: 'Confidentiel',
+    programme: 'Rénovation en site occupé · 6 mois',
+    perim: 'CFO + CFA + SSI',
+    citation: '« Coordination quotidienne avec nos équipes soignantes. Aucun incident. »'
+  },
+  {
+    titre: 'Résidence Montana — Trets',
+    segment: 'Logement collectif',
+    moa: 'SOGEPROM Sud',
+    moe: 'SEPROCI',
+    programme: '73 logements + 1 niveau parking',
+    perim: 'CFO + CFA',
+    citation: ''
+  }
+];
+---
+<Base title="Nos références chantiers : logement, tertiaire, énergétique | ECS"
+      description="Découvrez nos chantiers récents : logement collectif, tertiaire, santé, hôtellerie, ombrières PV, bailleurs sociaux.">
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Nos références</p>
+      <h1 class="h1-section">Une sélection de chantiers représentatifs de notre activité B2B.</h1>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        {refs.map(r => (
+          <article class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="aspect-video bg-ecs-green-light flex items-center justify-center">
+              <span class="text-5xl opacity-50">📷</span>
+            </div>
+            <div class="p-6">
+              <p class="text-xs uppercase tracking-wider font-bold text-ecs-green mb-2">{r.segment}</p>
+              <h2 class="text-lg font-bold mb-3">{r.titre}</h2>
+              <dl class="text-sm space-y-1 text-gray-700">
+                <div class="flex gap-2"><dt class="font-semibold w-20">MOA</dt><dd>{r.moa}</dd></div>
+                <div class="flex gap-2"><dt class="font-semibold w-20">MOE</dt><dd>{r.moe}</dd></div>
+                <div class="flex gap-2"><dt class="font-semibold w-20">Programme</dt><dd>{r.programme}</dd></div>
+                <div class="flex gap-2"><dt class="font-semibold w-20">Périmètre</dt><dd>{r.perim}</dd></div>
+              </dl>
+              {r.citation && (
+                <p class="mt-4 pt-4 border-t border-gray-100 italic text-sm text-gray-600 leading-relaxed">{r.citation}</p>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <div class="callout mt-12">
+        <p class="callout-label">À venir</p>
+        <p class="callout-title">Six cas clients tertiaires en cours de production</p>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Hôtel récent, plateaux de bureaux, bailleur social en rénovation énergétique, site industriel ou
+          logistique, ombrière PV de parking — les références qui consolident notre positionnement Tertiaire
+          & Solutions énergétiques sont en cours de documentation.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

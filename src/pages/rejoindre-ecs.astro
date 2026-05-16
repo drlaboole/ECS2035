@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+const raisons = [
+  { titre: 'Une PME structurée', desc: 'Pas un artisan, pas une multinationale anonyme. Une organisation à taille humaine où les dirigeants sont accessibles, avec la solidité d\'une structure (ISO 9001, ERP, plan formation).' },
+  { titre: 'Des métiers d\'avenir', desc: 'Photovoltaïque, IRVE, GTB, performance énergétique, SSI. Monter en compétence sur les métiers émergents via Route des Génies et nos partenariats fournisseurs.' },
+  { titre: 'Un parcours balisé', desc: 'Technicien → conducteur de travaux → responsable d\'exploitation → directeur d\'agence : nous favorisons les évolutions internes.' },
+  { titre: 'Une démarche RSE concrète', desc: 'Sécurité (MASE), insertion (CFA, AFPA, E2C, ESAT), mécénat de compétences. Nos engagements ne sont pas un affichage.' },
+  { titre: 'Un cap clair', desc: 'ETI à taille humaine à horizon 2035, partenaire énergétique B2B de référence. Vous savez où vous allez et avec qui vous y allez.' }
+];
+const metiers = [
+  { titre: 'Conducteur de travaux', desc: 'Logement collectif ou tertiaire. Pilotage opérationnel des chantiers.' },
+  { titre: 'Chargé d\'affaires', desc: 'Tertiaire, solaire photovoltaïque, courants faibles. Pilotage commercial + travaux + sécurité.' },
+  { titre: 'Ingénieur Bureau d\'Études', desc: 'BE Chiffrage / Conception ou BE Exécution. CFO, CFA, SSI, GTB.' },
+  { titre: 'Technicien spécialisé', desc: 'PV, IRVE, GTB. Compétences en tension marché.' },
+  { titre: 'Apprenti / alternant', desc: 'CAP, BP, BTS, licence pro. Parcours d\'intégration et de formation interne.' },
+  { titre: 'Responsable d\'agence', desc: 'Mobilité interne sur les agences existantes ou en ouverture.' }
+];
+---
+<Base title="Rejoindre Énergie Côte Sud : carrières et offres d'emploi"
+      description="Rejoignez une PME en route vers ETI 2035 : conducteur de travaux, chargé d'affaires, ingénieur BE, technicien, alternance. 5 agences Sud-Ouest et PACA.">
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Rejoindre ECS</p>
+      <h1 class="h1-section">Une PME en route vers ETI 2035.</h1>
+      <p class="text-lg text-gray-700 max-w-3xl mt-6 leading-relaxed">
+        Conducteurs de travaux, chargés d'affaires, ingénieurs BE, techniciens spécialisés, alternants :
+        nous recrutons en permanence sur nos cinq agences. Chez ECS, nous croyons aux carrières construites
+        dans la durée — école interne Route des Génies, formations PV et IRVE, mobilité inter-agences,
+        parcours conducteur de travaux balisé.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-ecs-green-lighter py-16">
+    <div class="container-ecs">
+      <h2 class="h2-section">Pourquoi ECS — cinq bonnes raisons</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        {raisons.map((r, i) => (
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="text-sm font-bold text-ecs-green mb-2">0{i + 1}</div>
+            <h3 class="font-bold mb-2">{r.titre}</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">{r.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16">
+    <div class="container-ecs">
+      <h2 class="h2-section">Nos métiers qui recrutent</h2>
+      <div class="grid md:grid-cols-2 gap-5 mt-8">
+        {metiers.map(m => (
+          <div class="border-l-4 border-ecs-green bg-ecs-green-lighter p-5">
+            <h3 class="font-bold">{m.titre}</h3>
+            <p class="text-sm text-gray-700 mt-1">{m.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="offres" class="bg-gray-50 py-16">
+    <div class="container-ecs text-center">
+      <h2 class="h2-section">Nos offres d'emploi</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto mt-4">
+        Toutes nos offres en cours sur nos cinq agences. Ne trouvez-vous pas l'offre qui vous correspond ?
+        Envoyez-nous une candidature spontanée.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://www.linkedin.com/company/energie-cote-sud/jobs/" target="_blank" rel="noopener" class="btn-primary">Voir les offres LinkedIn</a>
+        <a href="/contact?objet=candidature" class="btn-secondary">Candidature spontanée</a>
+      </div>
+    </div>
+  </section>
+</Base>

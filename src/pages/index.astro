@@ -1,0 +1,210 @@
+---
+import Base from '../layouts/Base.astro';
+
+const metiers = [
+  { slug: 'logement-collectif', titre: 'Logement collectif', accroche: 'Notre cœur historique. Promoteurs, bailleurs sociaux : plus de 800 logements livrés chaque année avec une discipline industrielle.', icon: '🏘️' },
+  { slug: 'tertiaire-sante', titre: 'Tertiaire & santé', accroche: 'EHPAD, hôtellerie, bureaux, retail, santé. La discipline du chantier en site occupé, le dialogue technique avec les BET fluides exigeants.', icon: '🏢' },
+  { slug: 'industrie-defense', titre: 'Industrie & défense', accroche: 'Sites industriels, logistique, infrastructures défense. Pôle Mer Méditerranée — une expertise pour cahiers des charges complexes.', icon: '🏭' },
+  { slug: 'solutions-energetiques', titre: 'Solutions énergétiques', accroche: 'Photovoltaïque 1-200 kWc, IRVE B2B, GTB, audits décret tertiaire. Un seul interlocuteur sur toute l\'offre énergie.', icon: '⚡' },
+  { slug: 'ssi', titre: 'Sécurité incendie (SSI)', accroche: 'Conception, installation, maintenance des systèmes SSI pour ERP, tertiaire, industries. Contrats récurrents, vérifications réglementaires.', icon: '🔥' },
+  { slug: 'maintenance', titre: 'Maintenance multi-techniques', accroche: 'Contrats de maintenance préventive et corrective sur installations électriques tertiaires. Astreinte 24/7, équipes locales.', icon: '🛠️' }
+];
+---
+
+<Base
+  title="Acteur de référence en génie électrique B2B Sud-Ouest & PACA | Énergie Côte Sud"
+  description="Partenaire énergétique B2B de référence en Sud-Ouest, PACA et Vallée du Rhône. Génie électrique, tertiaire, solutions énergétiques. Acteur de référence ETI 2035.">
+
+  <!-- HERO -->
+  <section class="relative bg-ecs-green text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+        <defs>
+          <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+            <path d="M 50 0 L 0 0 0 50" fill="none" stroke="white" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="600" fill="url(#grid)"/>
+      </svg>
+    </div>
+    <div class="container-ecs relative py-20 md:py-32">
+      <p class="text-sm uppercase tracking-wider font-bold opacity-80 mb-4">Acteur de référence en génie électrique</p>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        Le partenaire énergétique<br />
+        <span class="opacity-90">du Sud-Ouest, PACA</span><br />
+        <span class="opacity-90">et de la Vallée du Rhône.</span>
+      </h1>
+      <p class="text-lg md:text-xl max-w-2xl opacity-90 mb-10 leading-relaxed">
+        Depuis plus de quarante ans, nous accompagnons promoteurs, foncières, bailleurs sociaux et industriels
+        sur leurs projets de génie électrique. Avec une exigence constante : tenir nos délais, sécuriser nos marges,
+        livrer un travail à hauteur de la confiance qu'on nous accorde.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="/nos-metiers" class="btn-white">Découvrir nos métiers →</a>
+        <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-ecs-green transition-colors">
+          Demander un devis
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TROIS PILIERS -->
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label text-center">Notre conviction</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 max-w-3xl mx-auto">
+        Trois engagements qui structurent chacun de nos chantiers
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="border-t-4 border-ecs-green pt-6">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="text-xl font-bold mb-3">Tenir nos promesses</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Les délais. La qualité. La sécurité. La coordination avec les autres lots. Notre engagement
+            repose sur la fiabilité de nos équipes et la rigueur de notre organisation.
+          </p>
+        </div>
+        <div class="border-t-4 border-ecs-green pt-6">
+          <div class="text-4xl mb-4">⚙️</div>
+          <h3 class="text-xl font-bold mb-3">Une PME qui pense comme une ETI</h3>
+          <p class="text-gray-700 leading-relaxed">
+            ISO 9001 renouvelée 2025, MASE en cours, ERP intégré, pilotage par OKR. La structure d'une ETI
+            pour la réactivité d'une PME.
+          </p>
+        </div>
+        <div class="border-t-4 border-ecs-green pt-6">
+          <div class="text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold mb-3">Acteur de la transition énergétique</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Génie électrique, photovoltaïque 1-200 kWc, IRVE B2B, performance énergétique.
+            Un seul interlocuteur sur l'ensemble du périmètre.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOS METIERS -->
+  <section class="bg-ecs-green-lighter py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Nos savoir-faire</p>
+      <h2 class="h1-section">Six expertises B2B. Une cohérence intégrée.</h2>
+      <p class="text-lg text-gray-700 max-w-3xl mt-4 mb-12 leading-relaxed">
+        Du logement collectif à l'industrie, de la maintenance multi-techniques aux solutions énergétiques intégrées,
+        nos six métiers répondent aux exigences des donneurs d'ordres B2B sur l'ensemble du Sud-Ouest, PACA
+        et de la Vallée du Rhône.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {metiers.map(m => (
+          <a href={`/nos-metiers/${m.slug}`} class="group bg-white p-6 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 border border-gray-100">
+            <div class="text-3xl mb-4">{m.icon}</div>
+            <h3 class="text-lg font-bold mb-2 group-hover:text-ecs-green transition-colors">{m.titre}</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">{m.accroche}</p>
+            <p class="mt-4 text-sm font-semibold text-ecs-green opacity-0 group-hover:opacity-100 transition-opacity">En savoir plus →</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES CLES -->
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Nos chiffres clés</p>
+      <h2 class="h1-section">Une trajectoire de croissance maîtrisée.</h2>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-ecs-green-light p-6 text-center">
+          <div class="text-4xl md:text-5xl font-bold text-ecs-green mb-2">29,3 M€</div>
+          <div class="text-sm text-gray-700">Chiffre d'affaires consolidé 2026</div>
+        </div>
+        <div class="bg-ecs-green-lighter p-6 text-center">
+          <div class="text-4xl md:text-5xl font-bold text-ecs-green mb-2">196</div>
+          <div class="text-sm text-gray-700">Salariés en CDI</div>
+        </div>
+        <div class="bg-ecs-green-light p-6 text-center">
+          <div class="text-4xl md:text-5xl font-bold text-ecs-green mb-2">40+</div>
+          <div class="text-sm text-gray-700">Années d'expérience</div>
+        </div>
+        <div class="bg-ecs-green-lighter p-6 text-center">
+          <div class="text-4xl md:text-5xl font-bold text-ecs-green mb-2">5</div>
+          <div class="text-sm text-gray-700">Agences au Sud-Ouest et PACA</div>
+        </div>
+      </div>
+      <p class="mt-8 text-center text-gray-600 text-sm">
+        Cap 2035 : <strong>45 M€ travaux + 5 M€ promotion immobilière</strong> · ETI à taille humaine ·
+        Acteur de référence régional sur le génie électrique B2B et les solutions énergétiques.
+      </p>
+    </div>
+  </section>
+
+  <!-- RSE -->
+  <section class="bg-ecs-green-lighter py-16 md:py-20">
+    <div class="container-ecs grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="chapter-label">Notre démarche RSE</p>
+        <h2 class="h1-section">La performance n'a de sens que si elle est partagée.</h2>
+        <p class="mt-6 text-gray-700 leading-relaxed">
+          Sécurité au cœur (MASE en cours, taux de fréquence en réduction continue), engagement environnemental
+          (<strong>EcoVadis Engagé obtenu en janvier 2026</strong>, niveau Argent visé 2027), capital humain
+          (Route des Génies, alternance, mobilité interne), insertion (partenariats CFA, AFPA, E2C, sous-traitance
+          ESAT, mécénat de compétences).
+        </p>
+        <a href="/demarche-rse" class="mt-8 btn-primary">Notre démarche RSE →</a>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm">
+          <div class="text-2xl mb-1">📋</div>
+          <div class="font-bold text-ecs-green">ISO 9001</div>
+          <div class="text-xs text-gray-600 mt-1">Renouvelée 2025</div>
+        </div>
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm">
+          <div class="text-2xl mb-1">🦺</div>
+          <div class="font-bold text-ecs-green">MASE</div>
+          <div class="text-xs text-gray-600 mt-1">Certification T1 2027</div>
+        </div>
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm">
+          <div class="text-2xl mb-1">♻️</div>
+          <div class="font-bold text-ecs-green">EcoVadis</div>
+          <div class="text-xs text-gray-600 mt-1">Engagé · 01/2026</div>
+        </div>
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm">
+          <div class="text-2xl mb-1">⚡</div>
+          <div class="font-bold text-ecs-green">Qualifelec</div>
+          <div class="text-xs text-gray-600 mt-1">Toutes activités</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REJOINDRE -->
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Rejoindre ECS</p>
+      <h2 class="h1-section">Une PME en route vers ETI 2035.</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-12 items-start">
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Conducteurs de travaux, chargés d'affaires, ingénieurs BE, techniciens spécialisés, alternants :
+          nous recrutons en permanence sur nos cinq agences. Chez ECS, nous croyons aux carrières construites
+          dans la durée — école interne Route des Génies, formations PV et IRVE, mobilité inter-agences,
+          parcours conducteur de travaux balisé.
+        </p>
+        <div class="flex flex-col gap-3">
+          <a href="/rejoindre-ecs" class="btn-primary">Découvrir nos métiers</a>
+          <a href="/rejoindre-ecs#offres" class="btn-secondary">Voir les offres d'emploi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="bg-gray-900 text-white py-16 md:py-20">
+    <div class="container-ecs text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Vous portez un projet ?</h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+        Notre équipe se fera un plaisir d'en discuter avec vous. Devis sous 48 heures ouvrées,
+        rendez-vous sur site possible dans la semaine selon disponibilité.
+      </p>
+      <a href="/contact" class="btn-white">Discuter de votre projet →</a>
+    </div>
+  </section>
+</Base>

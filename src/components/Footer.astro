@@ -1,0 +1,46 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-gray-300 mt-24">
+  <div class="border-t-4 border-ecs-green"></div>
+  <div class="container-ecs py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      <div class="md:col-span-2">
+        <img src="/logo-ecs-white.png" alt="Énergie Côte Sud" class="h-12 mb-4 brightness-0 invert" />
+        <p class="text-sm text-gray-400 max-w-md leading-relaxed">
+          Acteur de référence en génie électrique B2B sur le Sud-Ouest, PACA et la Vallée du Rhône.
+          Logement collectif, tertiaire, industrie, solutions énergétiques.
+        </p>
+        <p class="mt-4 text-xs uppercase tracking-wider font-bold text-white">Logement collectif · Tertiaire · Industrie · Énergies renouvelables</p>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-bold mb-4">Nos métiers</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/nos-metiers/logement-collectif" class="hover:text-ecs-green">Logement collectif</a></li>
+          <li><a href="/nos-metiers/tertiaire-sante" class="hover:text-ecs-green">Tertiaire & santé</a></li>
+          <li><a href="/nos-metiers/solutions-energetiques" class="hover:text-ecs-green">Solutions énergétiques</a></li>
+          <li><a href="/nos-metiers" class="hover:text-ecs-green">Tous nos métiers →</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-bold mb-4">Énergie Côte Sud</h4>
+        <ul class="space-y-2 text-sm">
+          <li>12 bis rue Parmentier</li>
+          <li>83085 Toulon cedex 9</li>
+          <li><a href="tel:0498080200" class="hover:text-ecs-green">04 98 08 02 00</a></li>
+          <li><a href="mailto:contact@energie-cote-sud.com" class="hover:text-ecs-green">contact@energie-cote-sud.com</a></li>
+          <li><a href="https://www.linkedin.com/company/energie-cote-sud/" target="_blank" rel="noopener" class="hover:text-ecs-green">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between gap-4 text-xs text-gray-500">
+      <div>© {year} Énergie Côte Sud. Tous droits réservés.</div>
+      <div class="flex gap-4">
+        <a href="/mentions-legales" class="hover:text-ecs-green">Mentions légales</a>
+        <a href="/politique-confidentialite" class="hover:text-ecs-green">Confidentialité</a>
+        <span>ISO 9001 · MASE en cours · EcoVadis Engagé 2026</span>
+      </div>
+    </div>
+  </div>
+</footer>

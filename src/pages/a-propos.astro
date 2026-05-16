@@ -1,0 +1,122 @@
+---
+import Base from '../layouts/Base.astro';
+
+const codir = [
+  { nom: 'David Haubertin', fonction: 'Président', perim: 'Vision 2035, stratégie, SI/ERP/IA, transformation, finances, RH groupe' },
+  { nom: 'Thierry Ausseil', fonction: 'Directeur Général des Opérations', perim: 'Pilotage opérationnel, Commerce – Études – Travaux, BU, exploitation' },
+  { nom: 'François Maneval', fonction: 'Directeur Commercial', perim: 'Développement commercial groupe' },
+  { nom: 'Catherine Maneval', fonction: 'Directrice Technique & Innovation', perim: 'Études & Innovation, BE Chiffrage et Conception' },
+  { nom: 'Piéric Jacquet', fonction: 'Directeur Administratif et Financier', perim: 'Administration & Finances' },
+  { nom: 'Delphine Haubertin', fonction: 'Directrice des Ressources Humaines', perim: 'Richesses humaines, recrutement, formation, paie' },
+  { nom: 'Jean-Marc Cerri', fonction: 'Directeur des Achats', perim: 'Achats & Logistique' },
+  { nom: 'Arnaud Andreo', fonction: 'Directeur des Expertises', perim: 'Courants Faibles, Solaire, Innovation' },
+  { nom: 'Anaïs Forte', fonction: 'Directrice HQSE', perim: 'Hygiène, Qualité, Sécurité, Environnement' }
+];
+---
+
+<Base
+  title="Énergie Côte Sud, PME en route vers ETI 2035 | À propos"
+  description="Découvrez Énergie Côte Sud : 30 M€ de CA, 196 salariés, 5 agences, ambition ETI 2035. PME indépendante du génie électrique B2B.">
+
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Énergie Côte Sud</p>
+      <h1 class="h1-section">Une PME multi-agences en route vers ETI 2035.</h1>
+
+      <div class="prose-ecs mt-8 max-w-4xl">
+        <p class="text-lg leading-relaxed">
+          Fondée il y a plus de quarante ans, Énergie Côte Sud est une entreprise indépendante du génie
+          électrique implantée dans le Sud-Ouest, PACA et bientôt la Vallée du Rhône. Avec <strong>29,3 M€ de chiffre
+          d'affaires consolidé prévu en 2026</strong> et près de 200 salariés répartis sur cinq agences, nous
+          accompagnons les acteurs B2B — promoteurs, foncières, bailleurs sociaux, grands tertiaires, industriels,
+          collectivités — sur des chantiers qui exigent à la fois la rigueur technique, la fiabilité d'exécution
+          et la cohérence multi-intervenants.
+        </p>
+        <p>
+          Notre cap est clair : devenir une ETI à taille humaine à horizon 2035, en construisant une organisation
+          structurée sans rien céder à ce qui fait notre force — la proximité avec le terrain, la réactivité,
+          la qualité d'exécution.
+        </p>
+      </div>
+
+      <div class="callout mt-10 max-w-4xl">
+        <p class="callout-label">Notre mission</p>
+        <p class="callout-title text-xl">
+          « Ensemble, faire de chaque projet une réussite, en alliant engagement, organisation et performance énergétique. »
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-ecs-green-lighter py-16">
+    <div class="container-ecs">
+      <h2 class="h2-section">Notre histoire — quarante ans de construction patiente.</h2>
+      <div class="prose-ecs max-w-4xl">
+        <h3 class="h3-section">D'une entreprise locale à une PME structurée</h3>
+        <p>
+          Né d'une vision familiale du métier, Énergie Côte Sud a grandi en restant fidèle à un principe simple :
+          la qualité d'un chantier dépend d'abord des femmes et des hommes qui le portent. Cette conviction a
+          guidé nos choix de développement — embaucher en CDI plutôt qu'en intérim, former plutôt que sous-traiter,
+          structurer plutôt que sous-traiter quand l'activité grandit.
+        </p>
+        <h3 class="h3-section">Les dix dernières années — une croissance maîtrisée</h3>
+        <p>
+          Entre 2015 et 2024, notre chiffre d'affaires est passé de 12 M€ à près de 30 M€ — un triplement en
+          moins de dix ans. Nous avons ouvert trois nouvelles agences, recruté plus de 100 collaborateurs,
+          structuré une fonction achats interne, lancé un ERP intégré, renouvelé ISO 9001, engagé la démarche
+          MASE et obtenu EcoVadis Engagé.
+        </p>
+        <h3 class="h3-section">Le cap 2035 — ETI à taille humaine</h3>
+        <p>
+          En 2024, nous avons collectivement décidé de repositionner notre objectif initial de 2030 à 2035.
+          Pourquoi ? Parce que la croissance non rentable est le piège du secteur du génie électrique — 3 171
+          procédures collectives en 2024 dans notre branche. Nous voulons devenir une ETI, mais une ETI solide,
+          rentable, durable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16">
+    <div class="container-ecs">
+      <h2 class="h2-section">Notre gouvernance</h2>
+      <p class="text-gray-700 mb-10 max-w-3xl">
+        Depuis janvier 2026, notre gouvernance s'articule autour d'une présidence stratégique et d'une direction
+        générale opérationnelle, appuyées par un comité de direction de neuf membres.
+      </p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {codir.map(m => (
+          <div class="bg-white border border-gray-200 hover:border-ecs-green hover:shadow-md transition-all rounded-lg p-5">
+            <div class="text-ecs-green font-bold">{m.nom}</div>
+            <div class="text-sm font-semibold text-gray-700 mt-1">{m.fonction}</div>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">{m.perim}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16">
+    <div class="container-ecs">
+      <h2 class="h2-section">Notre groupe — quatre métiers complémentaires</h2>
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <div class="bg-white p-6 rounded-lg border-l-4 border-ecs-green">
+          <h3 class="font-bold text-lg mb-2">Travaux électriques</h3>
+          <p class="text-sm text-gray-700">Notre cœur de métier porté par Énergie Côte Sud (ECS) et Énergie Côte Sud Occitanie (ECSO).</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg border-l-4 border-ecs-green">
+          <h3 class="font-bold text-lg mb-2">Pierres du Sud Promotion</h3>
+          <p class="text-sm text-gray-700">Activité de promotion immobilière, en complément naturel de notre savoir-faire bâtiment.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg border-l-4 border-ecs-green">
+          <h3 class="font-bold text-lg mb-2">Route des Génies</h3>
+          <p class="text-sm text-gray-700">École interne de formation professionnelle, focalisée sur les métiers émergents (PV, IRVE, GTB).</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg border-l-4 border-ecs-green">
+          <h3 class="font-bold text-lg mb-2">La Méridionale de Digitalisation des Entreprises</h3>
+          <p class="text-sm text-gray-700">Édition d'outils digitaux pour le bâtiment, dont notre ERP intégré IMA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

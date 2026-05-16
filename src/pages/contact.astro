@@ -1,0 +1,115 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Contact Énergie Côte Sud : devis, candidature, presse"
+      description="Contactez Énergie Côte Sud : demande de devis, réponse appel d'offres, candidature, presse. 5 agences en Sud-Ouest et PACA. Réponse sous 48h.">
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-ecs">
+      <p class="chapter-label">Contact</p>
+      <h1 class="h1-section">Discutons de votre projet.</h1>
+      <p class="text-lg text-gray-700 max-w-3xl mt-6 leading-relaxed">
+        Nous répondons à toutes les demandes sous 48 heures ouvrées. Rendez-vous sur site possible dans la
+        semaine selon disponibilité.
+      </p>
+
+      <div class="grid lg:grid-cols-2 gap-10 mt-12">
+        <!-- FORMULAIRE -->
+        <form class="space-y-4 bg-ecs-green-lighter p-8 rounded-lg" onsubmit="alert('Maquette de démonstration — le formulaire sera connecté lors de la mise en production.'); return false;">
+          <div>
+            <label class="block text-sm font-semibold mb-2">Objet *</label>
+            <select required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-ecs-green focus:ring-1 focus:ring-ecs-green outline-none">
+              <option value="">— Sélectionnez —</option>
+              <option>Demande de devis · Logement collectif</option>
+              <option>Demande de devis · Tertiaire & santé</option>
+              <option>Demande de devis · Solutions énergétiques (PV, IRVE, GTB)</option>
+              <option>Demande de devis · SSI</option>
+              <option>Demande de devis · Maintenance multi-techniques</option>
+              <option>Réponse à appel d'offres</option>
+              <option>Candidature spontanée</option>
+              <option>Presse et médias</option>
+              <option>Partenariat et fournisseurs</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-semibold mb-2">Prénom *</label>
+              <input type="text" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-ecs-green focus:ring-1 focus:ring-ecs-green outline-none" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Nom *</label>
+              <input type="text" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-ecs-green focus:ring-1 focus:ring-ecs-green outline-none" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Organisation *</label>
+            <input type="text" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-ecs-green focus:ring-1 focus:ring-ecs-green outline-none" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Fonction</label>
+            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-ecs-green focus:ring-1 focus:ring-ecs-green outline-none" />
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-semibold mb-2">Téléphone *</label>
+              <input type="tel" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-ecs-green focus:ring-1 focus:ring-ecs-green outline-none" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Email *</label>
+              <input type="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-ecs-green focus:ring-1 focus:ring-ecs-green outline-none" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Message *</label>
+            <textarea required rows="5" maxlength="1000" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-ecs-green focus:ring-1 focus:ring-ecs-green outline-none"></textarea>
+          </div>
+          <div class="text-xs text-gray-600">
+            Vos données sont utilisées uniquement pour répondre à votre demande. Conformément au RGPD, vous
+            disposez d'un droit d'accès, de rectification et de suppression de vos données.
+          </div>
+          <button type="submit" class="btn-primary w-full">Envoyer ma demande</button>
+        </form>
+
+        <!-- COORDONNEES -->
+        <div>
+          <h2 class="h2-section !mt-0">Nos coordonnées</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold text-ecs-green">Siège — Toulon</h3>
+              <p class="text-sm text-gray-700 mt-1">
+                12 bis rue Parmentier<br />
+                83085 Toulon cedex 9
+              </p>
+              <p class="mt-2 text-sm">
+                <a href="tel:0498080200" class="text-ecs-green font-semibold hover:underline">04 98 08 02 00</a><br />
+                <a href="mailto:contact@energie-cote-sud.com" class="text-ecs-green hover:underline">contact@energie-cote-sud.com</a>
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold text-ecs-green">Nos cinq agences</h3>
+              <ul class="text-sm text-gray-700 mt-1 space-y-1">
+                <li>· Agence Var (Toulon — siège)</li>
+                <li>· Agence Bouches-du-Rhône (en cours d'ouverture 2025-2026)</li>
+                <li>· Agence Est Côte d'Azur</li>
+                <li>· Comptoir des Alpes</li>
+                <li>· Énergie Côte Sud Occitanie (Bernis, Gard / Hérault)</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold text-ecs-green">Suivez-nous</h3>
+              <ul class="text-sm text-gray-700 mt-1 space-y-1">
+                <li><a href="https://www.linkedin.com/company/energie-cote-sud/" target="_blank" rel="noopener" class="hover:underline">LinkedIn @energie-cote-sud</a></li>
+              </ul>
+            </div>
+            <div class="bg-ecs-green-light p-5 rounded-lg">
+              <p class="text-sm text-gray-700 leading-relaxed">
+                <strong>Acteur de référence en génie électrique B2B.</strong><br />
+                ISO 9001 · MASE en cours · EcoVadis Engagé 01/2026 · Qualifelec
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
