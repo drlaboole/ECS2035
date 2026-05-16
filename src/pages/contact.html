@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Énergie Côte Sud : devis, candidature, presse</title>
+<meta name="description" content="Contactez Énergie Côte Sud : demande de devis, réponse appel d'offres, candidature, presse. 5 agences en PACA, dans le Gard et l'Hérault. Réponse sous 48h." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">
+      <img src="logos/logo-ecs-vert.png" alt="Énergie Côté Sud — Génie électrique" class="logo-img"/>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Accueil</a>
+      <a href="societe.html">La société</a>
+      <a href="metiers.html">Nos métiers</a>
+      <a href="references.html">Références</a>
+      <a href="rse.html">Démarche RSE</a>
+      <a href="rejoindre.html">Rejoindre ECS</a>
+      <a href="contact.html" class="nav-cta active">Contact</a>
+    </nav>
+    <button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('is-open')">Menu</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <nav class="breadcrumb"><a href="index.html">Accueil</a> · Contact</nav>
+    <span class="eyebrow" style="color:var(--ecs-green);">Contact</span>
+    <h1>Discutons de votre projet</h1>
+    <p class="subline">Nous répondons à toutes les demandes sous <strong>48 heures ouvrées</strong>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="display:grid;grid-template-columns:1.4fr 1fr;gap:64px;">
+    <!-- Formulaire -->
+    <div>
+      <span class="eyebrow">Votre demande</span>
+      <h2>Quel est l'objet de votre demande ?</h2>
+      <div class="objet-pills">
+        <button class="objet-pill is-active">Demande de devis</button>
+        <button class="objet-pill">Appel d'offres</button>
+        <button class="objet-pill">Candidature</button>
+        <button class="objet-pill">Presse / médias</button>
+        <button class="objet-pill">Partenariat fournisseur</button>
+        <button class="objet-pill">Autre</button>
+      </div>
+
+      <form>
+        <div class="form-row">
+          <div class="field"><label>Prénom *</label><input type="text" placeholder="Votre prénom" required></div>
+          <div class="field"><label>Nom *</label><input type="text" placeholder="Votre nom" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Organisation *</label><input type="text" placeholder="Votre entreprise" required></div>
+          <div class="field"><label>Fonction</label><input type="text" placeholder="Votre fonction"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Email *</label><input type="email" placeholder="vous@entreprise.com" required></div>
+          <div class="field"><label>Téléphone *</label><input type="tel" placeholder="06 12 34 56 78" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Agence ECS préférentielle</label>
+            <select>
+              <option>Auto-sélection selon code postal</option>
+              <option>Var (Toulon)</option>
+              <option>Bouches-du-Rhône (Marseille)</option>
+              <option>Est Côte d'Azur</option>
+              <option>Comptoir des Alpes</option>
+              <option>Occitanie (Bernis)</option>
+            </select>
+          </div>
+          <div class="field"><label>Code postal du projet</label><input type="text" placeholder="ex. 13000"></div>
+        </div>
+        <div class="field" style="margin-bottom:16px;">
+          <label>Votre message *</label>
+          <textarea placeholder="Décrivez votre projet : type d'opération, surface, calendrier, autres lots, contraintes spécifiques…" maxlength="1000"></textarea>
+          <div style="font-size:.78rem;color:var(--muted);text-align:right;margin-top:4px;">1000 caractères max</div>
+        </div>
+        <div class="field" style="margin-bottom:24px;">
+          <label>Pièce jointe (CCTP, plans, DCE) — optionnel</label>
+          <input type="file" style="padding:8px;background:var(--paper-2);">
+          <div style="font-size:.78rem;color:var(--muted);margin-top:4px;">PDF, ZIP — 10 Mo max</div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:start;margin-bottom:24px;">
+          <input type="checkbox" id="rgpd" style="margin-top:4px;">
+          <label for="rgpd" style="font-size:.85rem;color:var(--ink-soft);font-weight:400;">J'accepte que mes données soient utilisées pour traiter ma demande conformément à la <a href="#" style="color:var(--ecs-green);font-weight:600;">politique de confidentialité</a>.</label>
+        </div>
+        <button type="submit" class="btn btn--primary">Envoyer ma demande <span class="arrow">→</span></button>
+      </form>
+    </div>
+
+    <!-- Sidebar -->
+    <div>
+      <div class="card" style="background:var(--black);color:var(--white);border:0;">
+        <h3 style="color:var(--white);">Siège — Toulon</h3>
+        <p style="color:rgba(255,255,255,.85);font-size:.95rem;">
+          <strong style="color:var(--white);">Énergie Côte Sud</strong><br/>
+          12 bis rue Parmentier<br/>
+          ZI Toulon Est — BP 377<br/>
+          83085 Toulon Cedex 9
+        </p>
+        <p style="color:rgba(255,255,255,.92);">
+          📞 <a href="tel:0498080200" style="color:var(--ecs-green);font-weight:600;">04 98 08 02 00</a><br/>
+          ✉ <a href="mailto:ecs@energie-cote-sud.com" style="color:var(--ecs-green);font-weight:600;">ecs@energie-cote-sud.com</a>
+        </p>
+      </div>
+      <div class="card mt-4">
+        <h3>Occitanie — Bernis</h3>
+        <p style="color:var(--ink-soft);font-size:.95rem;">
+          33 route de Nîmes<br/>
+          30620 Bernis
+        </p>
+        <p>📞 <a href="tel:0466716450" style="color:var(--ecs-green);font-weight:600;">04 66 71 64 50</a></p>
+      </div>
+      <div class="card mt-4" style="background:var(--ecs-green-lt);border-color:var(--ecs-green-lt);">
+        <h3 style="color:var(--ecs-green);">Suivez-nous</h3>
+        <p style="color:var(--ink-soft);font-size:.95rem;">
+          <a href="https://www.linkedin.com/company/energie-cote-sud/" style="color:var(--ecs-green);font-weight:600;">→ LinkedIn @energie-cote-sud</a><br/>
+          <a href="https://www.youtube.com/@EnergieCoteSud" style="color:var(--ecs-green);font-weight:600;">→ YouTube</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="logos/logo-ecs-blanc.png" alt="Énergie Côté Sud" class="logo-img logo-img--footer"/><p>Partenaire énergétique B2B de PACA, du Gard et de l'Hérault.</p></div>
+      <div class="footer-col"><h5>Nos métiers</h5><ul>
+        <li><a href="metier-logement.html">Logement collectif</a></li>
+        <li><a href="metier-tertiaire.html">Tertiaire & santé</a></li>
+        <li><a href="metier-solutions-energetiques.html">Solutions énergétiques</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>L'entreprise</h5><ul>
+        <li><a href="societe.html">Notre histoire</a></li>
+        <li><a href="rse.html">Démarche RSE</a></li>
+        <li><a href="rejoindre.html">Rejoindre ECS</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul>
+        <li>12 bis rue Parmentier, 83085 Toulon</li>
+        <li><a href="tel:0498080200">04 98 08 02 00</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Énergie Côte Sud</div><div><a href="#">Mentions</a> · <a href="#">RGPD</a></div></div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.objet-pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.objet-pill').forEach(b => b.classList.remove('is-active'));
+    btn.classList.add('is-active');
+  });
+});
+// Pré-sélection via param URL ?objet=
+const params = new URLSearchParams(window.location.search);
+const obj = params.get('objet');
+if (obj) {
+  const map = {logement:0, tertiaire:0, 'solutions-energetiques':0, ssi:0, maintenance:0, 'industrie-defense':0, candidature:2, presse:3};
+  if (obj in map) {
+    document.querySelectorAll('.objet-pill').forEach(b => b.classList.remove('is-active'));
+    document.querySelectorAll('.objet-pill')[map[obj]].classList.add('is-active');
+  }
+}
+</script>
+
+</body>
+</html>

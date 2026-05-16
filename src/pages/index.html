@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Acteur de référence en génie électrique B2B PACA, Gard & Hérault | Énergie Côte Sud</title>
+<meta name="description" content="Partenaire énergétique B2B de référence en PACA, dans le Gard et l'Hérault. Génie électrique, tertiaire, solutions énergétiques. Acteur de référence ETI 2035." />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<style>
+/* Cartoon illustrations inline & images réelles */
+.cartoon { display:block; width:100%; height:100%; }
+.metier-card { background-color:#0a0a0a; background-size:cover; background-position:center; }
+.metier-card .bg-cartoon { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; opacity:.85; }
+.metier-card .bg-cartoon svg { width:80%; height:80%; }
+.metier-card .bg-photo { position:absolute; inset:0; background-size:cover; background-position:center; filter:saturate(.85) brightness(.6); }
+.ref-card .ref-img.with-photo { background:#000; padding:0; height:200px; }
+.ref-card .ref-img.with-photo img { width:100%; height:100%; object-fit:cover; opacity:.92; }
+.hero-visual { position:relative; display:flex; align-items:center; justify-content:center; }
+.hero-visual svg { width:100%; max-width:480px; }
+.news-card .news-img.with-photo { background:#000; padding:0; }
+.news-card .news-img.with-photo img { width:100%; height:100%; object-fit:cover; opacity:.95; }
+.actu-illu { display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg, #000, #1a1a1a); color:var(--ecs-green); }
+.actu-illu svg { width:60%; height:60%; }
+.client-logos { display:grid; grid-template-columns:repeat(6, 1fr); gap:32px; align-items:center; margin-top:48px; padding:32px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.client-logos img { max-height:38px; width:auto; opacity:.7; filter:grayscale(1); transition:all .25s; margin:0 auto; }
+.client-logos img:hover { opacity:1; filter:grayscale(0); }
+@media (max-width:680px) { .client-logos { grid-template-columns:repeat(3, 1fr); gap:18px; } }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">
+      <img src="logos/logo-ecs-vert.png" alt="Énergie Côté Sud — Génie électrique" class="logo-img"/>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="societe.html">La société</a>
+      <a href="metiers.html">Nos métiers</a>
+      <a href="references.html">Références</a>
+      <a href="rse.html">Démarche RSE</a>
+      <a href="rejoindre.html">Rejoindre ECS</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('is-open')">Menu</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="fade-up">
+        <span class="hero-eyebrow">Acteur de référence en génie électrique B2B</span>
+        <h1>Faisons de chaque projet <em>une réussite</em>.</h1>
+        <p class="subline">Partenaire énergétique de PACA, du Gard et de l'Hérault. Logement collectif. Tertiaire. Industrie. Solutions énergétiques. Pour les promoteurs, foncières, bailleurs, industriels et collectivités qui exigent fiabilité, expertise et engagement.</p>
+        <div class="hero-actions">
+          <a href="metiers.html" class="btn btn--primary">Découvrir nos métiers <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn--ghost">Demander un devis</a>
+        </div>
+        <div class="hero-meta">
+          <div class="stat"><strong>30 M€</strong><span>CA 2026</span></div>
+          <div class="stat"><strong>196</strong><span>Collaborateurs</span></div>
+          <div class="stat"><strong>5</strong><span>Agences</span></div>
+          <div class="stat"><strong>2035</strong><span>Cap ETI</span></div>
+        </div>
+      </div>
+      <div class="hero-visual fade-up d2">
+        <!-- Cartoon : électricien sur chantier + bâtiment -->
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="cartoon">
+          <!-- Sky / background ring -->
+          <circle cx="200" cy="200" r="180" fill="#00a65d" opacity=".08"/>
+          <circle cx="200" cy="200" r="140" fill="#00a65d" opacity=".05"/>
+
+          <!-- Bâtiment principal -->
+          <rect x="80" y="120" width="160" height="220" fill="#1a1a1a" stroke="#00a65d" stroke-width="2"/>
+          <!-- Fenêtres -->
+          <g fill="#00a65d" opacity=".85">
+            <rect x="95" y="140" width="22" height="22"/>
+            <rect x="130" y="140" width="22" height="22"/>
+            <rect x="165" y="140" width="22" height="22"/>
+            <rect x="200" y="140" width="22" height="22"/>
+            <rect x="95" y="175" width="22" height="22"/>
+            <rect x="130" y="175" width="22" height="22" fill="#fff"/>
+            <rect x="165" y="175" width="22" height="22"/>
+            <rect x="200" y="175" width="22" height="22"/>
+            <rect x="95" y="210" width="22" height="22"/>
+            <rect x="130" y="210" width="22" height="22"/>
+            <rect x="165" y="210" width="22" height="22" fill="#fff"/>
+            <rect x="200" y="210" width="22" height="22"/>
+            <rect x="95" y="245" width="22" height="22"/>
+            <rect x="130" y="245" width="22" height="22"/>
+            <rect x="165" y="245" width="22" height="22"/>
+            <rect x="200" y="245" width="22" height="22"/>
+          </g>
+          <!-- Porte -->
+          <rect x="145" y="290" width="30" height="50" fill="#00a65d"/>
+
+          <!-- Panneau solaire au sommet -->
+          <g transform="translate(95, 95)">
+            <rect width="130" height="22" fill="#00a65d" rx="2"/>
+            <g stroke="#000" stroke-width="1">
+              <line x1="22" y1="0" x2="22" y2="22"/>
+              <line x1="44" y1="0" x2="44" y2="22"/>
+              <line x1="66" y1="0" x2="66" y2="22"/>
+              <line x1="88" y1="0" x2="88" y2="22"/>
+              <line x1="110" y1="0" x2="110" y2="22"/>
+              <line x1="0" y1="11" x2="130" y2="11"/>
+            </g>
+          </g>
+
+          <!-- Soleil derrière -->
+          <circle cx="320" cy="100" r="34" fill="#00a65d" opacity=".25"/>
+          <circle cx="320" cy="100" r="22" fill="#00a65d"/>
+          <g stroke="#00a65d" stroke-width="3" stroke-linecap="round">
+            <line x1="320" y1="50" x2="320" y2="60"/>
+            <line x1="320" y1="140" x2="320" y2="150"/>
+            <line x1="270" y1="100" x2="280" y2="100"/>
+            <line x1="360" y1="100" x2="370" y2="100"/>
+            <line x1="288" y1="68" x2="295" y2="75"/>
+            <line x1="345" y1="125" x2="352" y2="132"/>
+            <line x1="288" y1="132" x2="295" y2="125"/>
+            <line x1="345" y1="75" x2="352" y2="68"/>
+          </g>
+
+          <!-- Borne IRVE à gauche -->
+          <g transform="translate(30, 240)">
+            <rect width="34" height="80" fill="#1a1a1a" rx="3"/>
+            <rect x="6" y="8" width="22" height="16" fill="#00a65d" rx="2"/>
+            <circle cx="17" cy="44" r="4" fill="#00a65d"/>
+            <rect x="13" y="55" width="8" height="20" fill="#00a65d" rx="1"/>
+            <line x1="17" y1="80" x2="17" y2="100" stroke="#1a1a1a" stroke-width="3"/>
+          </g>
+
+          <!-- Sol -->
+          <rect x="0" y="340" width="400" height="6" fill="#1a1a1a"/>
+          <rect x="0" y="346" width="400" height="54" fill="#00a65d" opacity=".15"/>
+
+          <!-- Électricien -->
+          <g transform="translate(280, 250)">
+            <!-- Casque -->
+            <path d="M 0,20 Q 0,5 18,5 Q 36,5 36,20 L 38,28 L -2,28 Z" fill="#00a65d"/>
+            <line x1="18" y1="0" x2="18" y2="5" stroke="#00a65d" stroke-width="2"/>
+            <!-- Tête -->
+            <circle cx="18" cy="36" r="9" fill="#f4d4b0"/>
+            <!-- Corps (gilet réfléchissant) -->
+            <path d="M 6,46 L 30,46 L 32,80 L 4,80 Z" fill="#00a65d"/>
+            <rect x="14" y="55" width="8" height="3" fill="#fff"/>
+            <rect x="14" y="65" width="8" height="3" fill="#fff"/>
+            <!-- Pantalon -->
+            <rect x="6" y="80" width="10" height="22" fill="#1a1a1a"/>
+            <rect x="20" y="80" width="10" height="22" fill="#1a1a1a"/>
+            <!-- Bottes -->
+            <rect x="4" y="98" width="14" height="6" fill="#000"/>
+            <rect x="18" y="98" width="14" height="6" fill="#000"/>
+            <!-- Bras tendu (qui pointe vers le bâtiment) -->
+            <path d="M 6,50 L -8,40 L -10,42 L 5,52 Z" fill="#00a65d"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGOS CLIENTS (preuve sociale) -->
+<section class="pad-sm" style="padding:36px 0;">
+  <div class="wrap">
+    <p style="text-align:center; font-size:.78rem; font-weight:600; text-transform:uppercase; letter-spacing:.18em; color:var(--muted); margin:0 0 24px;">Ils nous ont fait confiance</p>
+    <div class="client-logos">
+      <img src="https://www.energie-cote-sud.com/wp-content/themes/theme-enfant/img/references/bouygues-immobilier.jpg" alt="Bouygues Immobilier"/>
+      <img src="https://www.energie-cote-sud.com/wp-content/themes/theme-enfant/img/references/vinci-immobilier.jpg" alt="Vinci Immobilier"/>
+      <img src="https://www.energie-cote-sud.com/wp-content/themes/theme-enfant/img/references/icade.jpg" alt="Icade"/>
+      <img src="https://www.energie-cote-sud.com/wp-content/themes/theme-enfant/img/references/nexity.jpg" alt="Nexity"/>
+      <img src="https://www.energie-cote-sud.com/wp-content/themes/theme-enfant/img/references/cogedim-mediterranee.jpg" alt="Cogedim"/>
+      <img src="https://www.energie-cote-sud.com/wp-content/themes/theme-enfant/img/references/kaufman-broad.jpg" alt="Kaufman & Broad"/>
+    </div>
+  </div>
+</section>
+
+<!-- 3 PILIERS -->
+<section style="padding-top:60px;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Notre engagement</span>
+      <h2>Trois piliers qui structurent chacun de nos chantiers</h2>
+      <p class="lead">La discipline d'une ETI au service de la fiabilité d'exécution attendue par nos donneurs d'ordres B2B.</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <div class="pico-lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px;">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.5 0 4.76 1 6.4 2.65"/>
+          </svg>
+        </div>
+        <h3>Tenir nos promesses</h3>
+        <p>Délais, qualité, sécurité, coordination avec les autres lots. Notre engagement repose sur la fiabilité de nos équipes et la rigueur de notre organisation — ce qui fait la différence sur les chantiers complexes en multi-acteurs.</p>
+        <a href="societe.html#valeurs" class="more">Nos valeurs <span class="arrow">→</span></a>
+      </div>
+      <div class="card">
+        <div class="pico-lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px;">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+        </div>
+        <h3>Une PME qui pense comme une ETI</h3>
+        <p>ISO 9001 renouvelée 2025. MASE en cours, certification visée T1 2027. EcoVadis Committed obtenu janvier 2026, Argent visé 2028. ERP intégré, pilotage OKR, gouvernance bipolaire. La structure d'une ETI pour la réactivité d'une PME.</p>
+        <a href="societe.html#amelioration" class="more">Notre démarche <span class="arrow">→</span></a>
+      </div>
+      <div class="card">
+        <div class="pico-lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px;">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h3>Acteur de la transition énergétique</h3>
+        <p>Génie électrique courants forts et faibles, photovoltaïque sur le sweet spot 1 kWc à 200 kWc, IRVE B2B, performance énergétique. Un seul interlocuteur sur l'ensemble du périmètre — la cohérence technique sans la complexité multi-intervenants.</p>
+        <a href="metier-solutions-energetiques.html" class="more">Solutions énergétiques <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTIERS avec photos réelles + cartoons -->
+<section style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Nos métiers</span>
+      <h2>Six expertises au service des acteurs B2B</h2>
+      <p class="lead">Du logement collectif à l'industrie, de la maintenance multi-techniques aux solutions énergétiques intégrées — la cohérence technique sans la complexité multi-intervenants.</p>
+    </div>
+    <div class="grid grid--3">
+      <a href="metier-logement.html" class="metier-card">
+        <div class="bg-photo" style="background-image:url('https://www.energie-cote-sud.com/wp-content/uploads/2025/04/image00005-1-225x300.jpeg');"></div>
+        <div class="body">
+          <h3>Logement collectif</h3>
+          <p>Notre cœur historique : promoteurs, foncières, bailleurs sociaux. Plus de 800 logements livrés chaque année avec une discipline industrielle.</p>
+          <span class="more">Découvrir <span class="arrow">→</span></span>
+        </div>
+      </a>
+      <a href="metier-tertiaire.html" class="metier-card">
+        <div class="bg-photo" style="background-image:url('https://www.energie-cote-sud.com/wp-content/uploads/2025/04/IMG_0670-L-225x300.jpeg');"></div>
+        <div class="body">
+          <h3>Tertiaire & santé</h3>
+          <p>EHPAD, hôtellerie, plateaux de bureaux, retail, santé. La discipline du chantier en site occupé, la coordination CFO + CFA, le dialogue avec les BET fluides exigeants.</p>
+          <span class="more">Découvrir <span class="arrow">→</span></span>
+        </div>
+      </a>
+      <a href="metier-solutions-energetiques.html" class="metier-card">
+        <div class="bg-cartoon">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="60" width="160" height="80" fill="#00a65d" stroke="#fff" stroke-width="2" transform="skewY(-8)"/>
+            <g stroke="#fff" stroke-width="1.5" transform="skewY(-8)">
+              <line x1="60" y1="60" x2="60" y2="140"/>
+              <line x1="100" y1="60" x2="100" y2="140"/>
+              <line x1="140" y1="60" x2="140" y2="140"/>
+              <line x1="20" y1="100" x2="180" y2="100"/>
+            </g>
+            <circle cx="100" cy="40" r="14" fill="#fff" opacity=".9"/>
+            <g stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".9">
+              <line x1="100" y1="20" x2="100" y2="14"/>
+              <line x1="120" y1="40" x2="126" y2="40"/>
+              <line x1="80" y1="40" x2="74" y2="40"/>
+              <line x1="86" y1="26" x2="82" y2="22"/>
+              <line x1="114" y1="26" x2="118" y2="22"/>
+            </g>
+            <line x1="100" y1="160" x2="100" y2="180" stroke="#fff" stroke-width="2"/>
+            <rect x="80" y="180" width="40" height="3" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Solutions énergétiques</h3>
+          <p>Photovoltaïque (sweet spot 1-200 kWc), IRVE B2B, GTB Schneider EcoStruxure, audits décret tertiaire. Un seul interlocuteur sur toute l'offre.</p>
+          <span class="more">Découvrir <span class="arrow">→</span></span>
+        </div>
+      </a>
+      <a href="metiers.html#industrie" class="metier-card">
+        <div class="bg-cartoon">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="100" width="50" height="80" fill="#00a65d"/>
+            <rect x="85" y="80" width="40" height="100" fill="#00a65d" opacity=".75"/>
+            <rect x="130" y="60" width="45" height="120" fill="#00a65d" opacity=".5"/>
+            <polygon points="55,100 75,75 75,100" fill="#1a1a1a"/>
+            <polygon points="105,80 120,55 120,80" fill="#1a1a1a"/>
+            <rect x="40" y="120" width="6" height="10" fill="#fff"/>
+            <rect x="55" y="120" width="6" height="10" fill="#fff"/>
+            <rect x="95" y="100" width="6" height="10" fill="#fff"/>
+            <rect x="105" y="100" width="6" height="10" fill="#fff"/>
+            <rect x="140" y="80" width="6" height="10" fill="#fff"/>
+            <rect x="155" y="80" width="6" height="10" fill="#fff"/>
+            <circle cx="60" cy="40" r="6" fill="#fff" opacity=".4"/>
+            <circle cx="160" cy="50" r="4" fill="#fff" opacity=".4"/>
+            <rect x="0" y="180" width="200" height="20" fill="#1a1a1a"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Industrie & défense</h3>
+          <p>Sites industriels, logistique, infrastructures de la défense. Une expertise en construction — Pôle Mer Méditerranée à nos côtés, développement HTA prévu 2028.</p>
+          <span class="more">Découvrir <span class="arrow">→</span></span>
+        </div>
+      </a>
+      <a href="metiers.html#ssi" class="metier-card">
+        <div class="bg-cartoon">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="60" fill="none" stroke="#00a65d" stroke-width="4"/>
+            <path d="M 100,55 L 130,90 L 130,130 Q 130,150 100,160 Q 70,150 70,130 L 70,90 Z" fill="#00a65d" opacity=".9"/>
+            <line x1="100" y1="80" x2="100" y2="115" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="100" cy="128" r="3" fill="#fff"/>
+            <g stroke="#00a65d" stroke-width="2" opacity=".5">
+              <circle cx="100" cy="100" r="80" fill="none"/>
+            </g>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Sécurité incendie (SSI)</h3>
+          <p>Conception, installation, maintenance SSI pour ERP, tertiaire, industries. Vérifications réglementaires NF S 61-933. Centre de profit dédié, lancé en 2026.</p>
+          <span class="more">Découvrir <span class="arrow">→</span></span>
+        </div>
+      </a>
+      <a href="metiers.html#maintenance" class="metier-card">
+        <div class="bg-cartoon">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 100,30 Q 60,30 50,80 L 50,140 Q 50,170 100,170 Q 150,170 150,140 L 150,80 Q 140,30 100,30 Z" fill="#00a65d" opacity=".15"/>
+            <g transform="translate(100 100)">
+              <circle r="50" fill="none" stroke="#00a65d" stroke-width="3"/>
+              <g stroke="#00a65d" stroke-width="4" stroke-linecap="round">
+                <line x1="0" y1="-40" x2="0" y2="-32"/>
+                <line x1="0" y1="32" x2="0" y2="40"/>
+                <line x1="-40" y1="0" x2="-32" y2="0"/>
+                <line x1="32" y1="0" x2="40" y2="0"/>
+              </g>
+              <circle r="20" fill="#00a65d"/>
+              <line x1="0" y1="0" x2="0" y2="-14" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+              <line x1="0" y1="0" x2="10" y2="6" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Maintenance multi-techniques</h3>
+          <p>Contrats préventifs et correctifs sur installations électriques tertiaires. Astreinte 24/7, équipes locales sur chaque agence. Disponibilité garantie, indicateurs partagés.</p>
+          <span class="more">Découvrir <span class="arrow">→</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom: 48px;">
+      <span class="eyebrow" style="color: var(--ecs-green);">Une trajectoire de croissance maîtrisée</span>
+      <h2 style="color: var(--white);">Une PME en route vers ETI à taille humaine</h2>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-block"><strong>30 M€</strong><span>CA consolidé 2026 — triplé depuis 2015</span></div>
+      <div class="stat-block"><strong>+800</strong><span>Logements neufs livrés chaque année</span></div>
+      <div class="stat-block"><strong>196</strong><span>Collaborateurs répartis sur 5 agences</span></div>
+      <div class="stat-block"><strong>40 ans</strong><span>D'engagement B2B dans le génie électrique</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RÉFÉRENCES avec vraies photos -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Réalisations</span>
+      <h2>Une sélection de chantiers récents</h2>
+      <p class="lead">Promoteurs, foncières, groupes hôteliers, bailleurs sociaux, EHPAD, industriels — des projets représentatifs de notre activité B2B.</p>
+    </div>
+    <div class="refs-band">
+      <a href="references.html" class="ref-card">
+        <div class="ref-img with-photo">
+          <img src="https://www.energie-cote-sud.com/wp-content/uploads/2025/09/1000003496-L.jpg" alt="CECAZ La Crau" loading="lazy"/>
+        </div>
+        <div class="ref-body">
+          <span class="ref-tag">Tertiaire · La Crau (83)</span>
+          <h4>CECAZ — bureaux Caisse d'Épargne</h4>
+          <p class="ref-meta">2 niveaux bureaux + parking · Livré 2025 · Caisse d'Épargne</p>
+        </div>
+      </a>
+      <a href="references.html" class="ref-card">
+        <div class="ref-img with-photo">
+          <img src="https://www.energie-cote-sud.com/wp-content/uploads/2025/04/IMG_0670-L-225x300.jpeg" alt="280 Prado Marseille" loading="lazy"/>
+        </div>
+        <div class="ref-body">
+          <span class="ref-tag">Logement · Marseille (13)</span>
+          <h4>280 Prado</h4>
+          <p class="ref-meta">Logements collectifs · Livré 2025</p>
+        </div>
+      </a>
+      <a href="references.html" class="ref-card">
+        <div class="ref-img with-photo">
+          <img src="https://www.energie-cote-sud.com/wp-content/uploads/2025/04/image00005-1-225x300.jpeg" alt="Les Jardins du Rouquier" loading="lazy"/>
+        </div>
+        <div class="ref-body">
+          <span class="ref-tag">Logement · Istres (13)</span>
+          <h4>Les Jardins du Rouquier</h4>
+          <p class="ref-meta">43 logements · En cours 2025</p>
+        </div>
+      </a>
+      <a href="references.html" class="ref-card">
+        <div class="ref-img with-photo">
+          <img src="https://www.energie-cote-sud.com/wp-content/uploads/2025/04/1000001910-L-225x300.jpg" alt="La Réserve Six Fours" loading="lazy"/>
+        </div>
+        <div class="ref-body">
+          <span class="ref-tag">Mixte · Six Fours (83)</span>
+          <h4>La Réserve Six Fours</h4>
+          <p class="ref-meta">35 appartements + 8 villas · 2024-2025</p>
+        </div>
+      </a>
+    </div>
+    <div class="text-center mt-6">
+      <a href="references.html" class="btn btn--outline">Voir toutes nos références <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGE CLIENT -->
+<section style="background:var(--paper-2);">
+  <div class="wrap--narrow">
+    <div class="quote-card">
+      <blockquote>« Pendant six mois, ECS a rénové l'installation électrique de notre EHPAD sans qu'aucun résident n'ait dû quitter sa chambre, sans un accident, sans un dépassement de planning. C'est un standard rare. »</blockquote>
+      <div class="quote-author">
+        <div class="quote-avatar">BI</div>
+        <div><strong>Directeur de programme</strong><span>Bouygues Immobilier · EHPAD Jardin Arcadie (Toulon)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RSE -->
+<section>
+  <div class="wrap">
+    <div class="rse-band">
+      <div>
+        <span class="eyebrow">Notre démarche RSE</span>
+        <h2>La performance n'a de sens que si elle est partagée.</h2>
+        <p>Chez ECS, la responsabilité sociétale n'est pas une obligation contractuelle — c'est une conviction qui structure nos décisions depuis dix ans. Sécurité au cœur (MASE en cours), engagement environnemental (EcoVadis Committed obtenu janvier 2026, niveau Argent visé 2028), capital humain (Route des Génies, alternance, mobilité interne), insertion (CFA, AFPA, E2C, sous-traitance ESAT).</p>
+        <a href="rse.html" class="btn btn--primary">Découvrir notre démarche <span class="arrow">→</span></a>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-pill green"><strong>ISO 9001</strong><span>Renouvelée 2025</span></div>
+        <div class="cert-pill"><strong>Qualifelec</strong><span>Actif</span></div>
+        <div class="cert-pill"><strong>MASE</strong><span>Audit blanc T4 2026</span></div>
+        <div class="cert-pill green"><strong>EcoVadis</strong><span>Committed 01/2026</span></div>
+        <div class="cert-pill"><strong>BPI Excellence</strong><span>Adhérent</span></div>
+        <div class="cert-pill"><strong>Excellences ECS</strong><span>Adhérent</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENCES -->
+<section style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Au plus près de vos chantiers</span>
+      <h2>Cinq agences au cœur de PACA, du Gard et de l'Hérault</h2>
+    </div>
+    <div class="map-band">
+      <div class="map-visu">
+        <svg viewBox="0 0 600 480" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.2" fill="#00a65d" opacity=".25"/>
+            </pattern>
+          </defs>
+          <rect width="600" height="480" fill="url(#dots)"/>
+          <path d="M 60,360 Q 120,340 180,355 Q 250,370 320,360 Q 400,348 480,365 Q 540,375 560,395 L 560,460 L 60,460 Z" fill="#00a65d" opacity=".18" stroke="#00a65d" stroke-width="1.5"/>
+          <path d="M 360,40 Q 365,140 370,240 Q 380,320 400,360" stroke="#00a65d" stroke-width="3" fill="none" opacity=".4" stroke-dasharray="4 6"/>
+          <g transform="translate(280, 360)"><circle r="14" fill="#00a65d"/><text y="5" text-anchor="middle" fill="#fff" font-family="Poppins,sans-serif" font-size="13" font-weight="700">V</text><text y="-22" text-anchor="middle" fill="#000" font-family="Poppins,sans-serif" font-size="12" font-weight="600">Toulon</text></g>
+          <g transform="translate(220, 350)"><circle r="14" fill="#00a65d"/><text y="5" text-anchor="middle" fill="#fff" font-family="Poppins,sans-serif" font-size="13" font-weight="700">B</text><text y="-22" text-anchor="middle" fill="#000" font-family="Poppins,sans-serif" font-size="12" font-weight="600">Marseille</text></g>
+          <g transform="translate(360, 360)"><circle r="14" fill="#00a65d"/><text y="5" text-anchor="middle" fill="#fff" font-family="Poppins,sans-serif" font-size="13" font-weight="700">E</text><text y="-22" text-anchor="middle" fill="#000" font-family="Poppins,sans-serif" font-size="12" font-weight="600">Côte d'Azur</text></g>
+          <g transform="translate(420, 340)"><circle r="14" fill="#00a65d"/><text y="5" text-anchor="middle" fill="#fff" font-family="Poppins,sans-serif" font-size="13" font-weight="700">C</text><text y="40" text-anchor="middle" fill="#000" font-family="Poppins,sans-serif" font-size="12" font-weight="600">Alpes-Maritimes</text></g>
+          <g transform="translate(140, 320)"><circle r="14" fill="#00a65d"/><text y="5" text-anchor="middle" fill="#fff" font-family="Poppins,sans-serif" font-size="13" font-weight="700">O</text><text y="-22" text-anchor="middle" fill="#000" font-family="Poppins,sans-serif" font-size="12" font-weight="600">Occitanie</text></g>
+          <g transform="translate(180, 220)"><circle r="12" fill="#fff" stroke="#00a65d" stroke-width="2" stroke-dasharray="2 2"/><text y="5" text-anchor="middle" fill="#00a65d" font-family="Poppins,sans-serif" font-size="12" font-weight="700">A</text><text y="-20" text-anchor="middle" fill="#00a65d" font-family="Poppins,sans-serif" font-size="11" font-weight="600">Avignon (2030)</text></g>
+        </svg>
+      </div>
+      <div class="agences-list">
+        <a href="agences.html" class="agence-row">
+          <div class="agence-pin">V</div>
+          <div><strong>Agence Var (siège)</strong><span>Toulon · Génie électrique tertiaire + logement, BU PV, expertise Pôle Mer</span></div>
+          <span class="more">→</span>
+        </a>
+        <a href="agences.html" class="agence-row">
+          <div class="agence-pin">B</div>
+          <div><strong>Agence Bouches-du-Rhône</strong><span>Marseille · Tertiaire + logement, en consolidation 2026-2028</span></div>
+          <span class="more">→</span>
+        </a>
+        <a href="agences.html" class="agence-row">
+          <div class="agence-pin">E</div>
+          <div><strong>Agence Est Côte d'Azur</strong><span>Tertiaire + logement, forte croissance</span></div>
+          <span class="more">→</span>
+        </a>
+        <a href="agences.html" class="agence-row">
+          <div class="agence-pin">C</div>
+          <div><strong>Comptoir des Alpes</strong><span>Alpes-Maritimes · Tertiaire + maintenance</span></div>
+          <span class="more">→</span>
+        </a>
+        <a href="agences.html" class="agence-row">
+          <div class="agence-pin">O</div>
+          <div><strong>Agence Occitanie</strong><span>Bernis · Logement + tertiaire, redressement engagé</span></div>
+          <span class="more">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA RH -->
+<section>
+  <div class="wrap">
+    <div class="cta-rh">
+      <div class="body">
+        <span class="eyebrow" style="color: var(--ecs-green);">Rejoindre ECS</span>
+        <h2>Une PME en route vers ETI 2035. <br/>Une organisation à taille humaine.</h2>
+        <p>Conducteurs de travaux, chargés d'affaires, ingénieurs BE, techniciens spécialisés, alternants : nous recrutons sur nos cinq agences. Chez ECS, nous croyons aux carrières construites dans la durée — école interne Route des Génies, formations PV et IRVE, mobilité inter-agences, parcours conducteur de travaux balisé.</p>
+        <a href="rejoindre.html" class="btn btn--primary">Voir nos opportunités <span class="arrow">→</span></a>
+      </div>
+      <div class="cta-rh-side">
+        <ul>
+          <li>Route des Génies — école interne PV / IRVE / GTB</li>
+          <li>Mobilité inter-agences PACA, Gard et Hérault</li>
+          <li>Cooptation primée 500-1 500 €</li>
+          <li>5 à 10 alternants par agence chaque année</li>
+          <li>Démarche MASE en cours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTUALITÉS -->
+<section style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="section-head section-head--left" style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 48px; flex-wrap:wrap; gap:24px;">
+      <div>
+        <span class="eyebrow">Actualités</span>
+        <h2 style="margin-bottom: 0;">Chantiers, métiers, expertise, vie d'entreprise</h2>
+      </div>
+      <a href="#" class="btn btn--outline">Toutes les actualités <span class="arrow">→</span></a>
+    </div>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="news-img actu-illu">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="40" width="120" height="120" fill="none" stroke="#00a65d" stroke-width="3" rx="4"/>
+            <text x="100" y="115" text-anchor="middle" font-family="Poppins,sans-serif" font-size="58" font-weight="800" fill="#00a65d">-40%</text>
+            <text x="100" y="142" text-anchor="middle" font-family="Poppins,sans-serif" font-size="14" font-weight="600" fill="#fff" opacity=".7">DÉCRET TERTIAIRE</text>
+          </svg>
+        </div>
+        <div class="news-body">
+          <span class="news-tag">Expertise</span>
+          <h4>Décret tertiaire 2030 : 5 chiffres à connaître pour anticiper</h4>
+          <div class="news-meta"><span>14 mai 2026</span>·<span>Onder Yabanci, Dir. Études</span></div>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-img with-photo">
+          <img src="https://www.energie-cote-sud.com/wp-content/uploads/2025/04/Capture-2-300x127.jpg" alt="Journée mondiale sécurité" loading="lazy"/>
+        </div>
+        <div class="news-body">
+          <span class="news-tag">RSE</span>
+          <h4>Journée mondiale de la sécurité et de la santé au travail</h4>
+          <div class="news-meta"><span>28 avril 2026</span>·<span>Anaïs Forte, Dir. QSE</span></div>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-img actu-illu">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="60" fill="none" stroke="#00a65d" stroke-width="6" stroke-dasharray="240 60" transform="rotate(-90 100 100)"/>
+            <text x="100" y="115" text-anchor="middle" font-family="Poppins,sans-serif" font-size="36" font-weight="800" fill="#fff">80%</text>
+            <text x="100" y="145" text-anchor="middle" font-family="Poppins,sans-serif" font-size="11" font-weight="600" fill="#00a65d" letter-spacing="2">MASE</text>
+          </svg>
+        </div>
+        <div class="news-body">
+          <span class="news-tag">RSE</span>
+          <h4>Notre démarche MASE — point d'avancement à 6 mois</h4>
+          <div class="news-meta"><span>22 avril 2026</span>·<span>Anaïs Forte, Dir. QSE & RSE</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logos/logo-ecs-blanc.png" alt="Énergie Côté Sud" class="logo-img logo-img--footer"/>
+        <p>Partenaire énergétique B2B de PACA, du Gard et de l'Hérault. PME en route vers ETI 2035.</p>
+        <div class="cert-strip">
+          <span class="cert-strip-item">ISO 9001</span>
+          <span class="cert-strip-item">Qualifelec</span>
+          <span class="cert-strip-item">EcoVadis Committed</span>
+          <span class="cert-strip-item">MASE (en cours)</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Nos métiers</h5>
+        <ul>
+          <li><a href="metier-logement.html">Logement collectif</a></li>
+          <li><a href="metier-tertiaire.html">Tertiaire & santé</a></li>
+          <li><a href="metier-solutions-energetiques.html">Solutions énergétiques</a></li>
+          <li><a href="metiers.html">Industrie & défense</a></li>
+          <li><a href="metiers.html">Sécurité incendie</a></li>
+          <li><a href="metiers.html">Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>L'entreprise</h5>
+        <ul>
+          <li><a href="societe.html">Notre histoire</a></li>
+          <li><a href="societe.html">Gouvernance</a></li>
+          <li><a href="societe.html">Chiffres clés</a></li>
+          <li><a href="rse.html">Démarche RSE</a></li>
+          <li><a href="agences.html">Nos agences</a></li>
+          <li><a href="references.html">Références</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><strong style="color:var(--white);">Siège Toulon</strong></li>
+          <li>12 bis rue Parmentier<br/>BP 377 — 83085 Toulon Cedex 9</li>
+          <li><a href="tel:0498080200">04 98 08 02 00</a></li>
+          <li><a href="mailto:ecs@energie-cote-sud.com">ecs@energie-cote-sud.com</a></li>
+          <li style="margin-top:12px;"><a href="rejoindre.html">Rejoindre ECS →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Énergie Côte Sud · Tous droits réservés</div>
+      <div>
+        <a href="#">Mentions légales</a> · <a href="#">RGPD</a> · <a href="#">Politique cookies</a> · <a href="#">Accessibilité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
