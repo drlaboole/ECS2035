@@ -5,6 +5,7 @@ export default defineConfig({
   site: 'https://www.energie-cote-sud.com',
   integrations: [tailwind()],
   build: {
+    format: 'file',
     inlineStylesheets: 'auto'
   }
 });
